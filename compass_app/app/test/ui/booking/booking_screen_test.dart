@@ -86,9 +86,7 @@ void main() {
       expect(find.text(kBooking.destination.tags.first), findsOneWidget);
     });
 
-    testWidgets('should create booking from itinerary config', (
-      tester,
-    ) async {
+    testWidgets('should create booking from itinerary config', (tester) async {
       await loadScreen(tester);
 
       // Create a new booking from stored itinerary config

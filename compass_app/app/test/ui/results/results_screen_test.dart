@@ -62,9 +62,7 @@ void main() {
       });
     });
 
-    testWidgets('should tap and navigate to activities', (
-      tester,
-    ) async {
+    testWidgets('should tap and navigate to activities', (tester) async {
       await mockNetworkImages(() async {
         await loadScreen(tester);
 
