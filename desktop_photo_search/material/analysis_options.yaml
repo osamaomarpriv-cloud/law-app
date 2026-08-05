@@ -7,7 +7,7 @@ analyzer:
     - windows/**
     - macos/**
     - linux/**
-include: package:analysis_defaults/flutter.yaml
+include: ../../analysis_options.yaml
 
 linter:
   rules:

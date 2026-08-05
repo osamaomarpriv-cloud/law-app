@@ -42,14 +42,14 @@ void main() {
       );
     }
 
-    testWidgets('should load screen', (WidgetTester tester) async {
+    testWidgets('should load screen', (tester) async {
       await mockNetworkImages(() async {
         await loadScreen(tester);
         expect(find.byType(ResultsScreen), findsOneWidget);
       });
     });
 
-    testWidgets('should display destination', (WidgetTester tester) async {
+    testWidgets('should display destination', (tester) async {
       await mockNetworkImages(() async {
         await loadScreen(tester);
 
@@ -63,7 +63,7 @@ void main() {
     });
 
     testWidgets('should tap and navigate to activities', (
-      WidgetTester tester,
+      tester,
     ) async {
       await mockNetworkImages(() async {
         await loadScreen(tester);

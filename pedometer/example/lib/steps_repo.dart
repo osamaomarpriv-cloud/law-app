@@ -90,6 +90,7 @@ class _IOSStepsRepo implements StepsRepo {
       return [];
     }
 
+    // ignore: inference_failure_on_collection_literal
     final handlers = [];
     final futures = <Future<Steps?>>[];
     final now = DateTime.now();
@@ -102,8 +103,8 @@ class _IOSStepsRepo implements StepsRepo {
 
       final handler = helpLib.wrapCallback(
         pd.ObjCBlock_ffiVoid_CMPedometerData_NSError.listener(lib, (
-          pd.CMPedometerData? result,
-          pd.NSError? error,
+          result,
+          error,
         ) {
           if (result != null) {
             final stepCount = result.numberOfSteps.intValue;

@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class AppLocalization {
   static AppLocalization of(BuildContext context) {
-    return Localizations.of(context, AppLocalization);
+    return Localizations.of<AppLocalization>(context, AppLocalization)!;
   }
 
   static const _strings = <String, String>{
@@ -53,11 +53,13 @@ class AppLocalization {
 
   String get daytime => _get('daytime');
 
-  String get errorWhileLoadingActivities => _get('errorWhileLoadingActivities');
+  String get errorWhileLoadingActivities =>
+      _get('errorWhileLoadingActivities');
 
   String get errorWhileLoadingBooking => _get('errorWhileLoadingBooking');
 
-  String get errorWhileLoadingContinents => _get('errorWhileLoadingContinents');
+  String get errorWhileLoadingContinents =>
+      _get('errorWhileLoadingContinents');
 
   String get errorWhileLoadingDestinations =>
       _get('errorWhileLoadingDestinations');
@@ -98,7 +100,8 @@ class AppLocalization {
 
   String get errorWhileDeletingBooking => _get('errorWhileDeletingBooking');
 
-  String nameTrips(String name) => _get('nameTrips').replaceAll('{name}', name);
+  String nameTrips(String name) =>
+      _get('nameTrips').replaceAll('{name}', name);
 
   String selected(int value) =>
       _get('selected').replaceAll('{1}', value.toString());

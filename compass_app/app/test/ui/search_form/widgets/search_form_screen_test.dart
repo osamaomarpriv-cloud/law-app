@@ -47,7 +47,7 @@ void main() {
     }
 
     testWidgets('Should fill form and perform search', (
-      WidgetTester tester,
+      tester,
     ) async {
       await loadWidget(tester);
       expect(find.byType(SearchFormScreen), findsOneWidget);

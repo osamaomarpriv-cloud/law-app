@@ -14,7 +14,7 @@ class SheetPage extends StatelessWidget {
             Navigator.of(context).push(
               CupertinoSheetRoute<void>(
                 scrollableBuilder:
-                    (BuildContext context, ScrollController controller) {
+                    (context, controller) {
                       return CupertinoPageScaffold(
                         navigationBar: CupertinoNavigationBar(
                           middle: const Text('Sheet'),
