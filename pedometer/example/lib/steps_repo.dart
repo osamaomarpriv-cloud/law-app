@@ -90,8 +90,7 @@ class _IOSStepsRepo implements StepsRepo {
       return [];
     }
 
-    // ignore: inference_failure_on_collection_literal
-    final handlers = [];
+    final handlers = <ffi.Finalizable>[];
     final futures = <Future<Steps?>>[];
     final now = DateTime.now();
 

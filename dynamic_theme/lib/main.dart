@@ -79,7 +79,7 @@ class _GenerativeAISampleState extends State<GenerativeAISample> {
             _ => ApiKeyWidget(
               title: widget.title,
               onSubmitted: (key) {
-                setState(() => apiKey = key as String);
+                setState(() => apiKey = key);
               },
             ),
           },
