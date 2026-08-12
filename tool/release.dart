@@ -243,7 +243,7 @@ class ReleaseScriptRunner {
 
     if (issues.isNotEmpty) {
       logToFile('- Issues found in $projectName');
-      for (final String issue in issues) {
+      for (final issue in issues) {
         if (_isOnlyWhitespace(issue)) continue;
         logToFile('-- $issue');
       }
