@@ -20,11 +20,6 @@ jobs:
         with:
           flutter-version: '3.19.6'
 
-      - name: Make gradlew executable
-        run: |
-          cd material_3_demo/android
-          chmod +x gradlew
-
       - name: Build APK
         run: |
           cd material_3_demo
@@ -36,3 +31,4 @@ jobs:
         with:
           name: release-apk
           path: material_3_demo/build/app/outputs/flutter-apk/app-release.apk
+          
